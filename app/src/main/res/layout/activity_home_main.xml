@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brick_background"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnSimpleLaranja"
+            android:layout_width="150sp"
+            android:layout_height="70dp"
+            android:background="@color/orange"
+            android:layout_margin="5dp"
+            android:text="Normal Laranja"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/btnLiteVerde"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSimpleAzul" />
+
+        <Button
+            android:id="@+id/btnSimpleAzul"
+            android:layout_width="150sp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@color/blue"
+            android:text="Simple Azul"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/btnSimpleLaranja"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLiteVerde"
+            android:layout_width="150sp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@color/green"
+            android:text="Lite Verde"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/btnLiteRoxo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSimpleLaranja" />
+
+        <Button
+            android:id="@+id/btnLiteRoxo"
+            android:layout_width="150sp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@color/purple_700"
+            android:text="constraint layout"
+            android:textColor="@color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnRelativeAmarelo"
+            app:layout_constraintTop_toBottomOf="@+id/btnLiteVerde" />
+
+        <Button
+            android:id="@+id/btnRelativeAmarelo"
+            android:layout_width="150sp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@color/yellow"
+            android:text="constraint layout"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLiteRoxo" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
